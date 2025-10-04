@@ -1,6 +1,9 @@
 // pages/_app.tsx
 import Layout from "@/components/layouts/Layout";
-import "@/styles/globals.css";
+// Remove or update this import based on your actual file location
+// import "@/styles/globals.css"; // Comment out or remove this line
+import "../styles/globals.css"; // If file is in parent styles directory
+import "./globals.css"; // If file is in pages directory
 import type { AppProps } from "next/app";
 import { CountProvider } from "@/context/CountContext";
 
