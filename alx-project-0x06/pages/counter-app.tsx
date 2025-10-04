@@ -1,10 +1,10 @@
 // pages/counter-app.tsx
 import { useSelector } from "react-redux";
-import { RootState, useAppDispatch, increment, decrement } from "@/store/store";
+import { RootState, useAppDispatch, AppDispatch, increment, decrement } from "@/store/store";
 
 const CounterApp: React.FC = () => {
   const count = useSelector((state: RootState) => state.counter.value);
-  const dispatch = useAppDispatch();
+  const dispatch: AppDispatch = useAppDispatch();
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-yellow-400 to-pink-500 flex flex-col justify-center items-center text-white pt-16">
